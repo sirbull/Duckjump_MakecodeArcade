@@ -462,10 +462,10 @@ game.onUpdateInterval(1000, function () {
 })
 forever(function () {
     tiles.setTilemap(tilemap`level1`)
-    pause(1000)
-    tiles.setTilemap(tilemap`level1`)
-    pause(1000)
+    pause(500)
+    tiles.setTilemap(tilemap`level4`)
+    pause(500)
 })
-game.onUpdateInterval(100, function () {
+game.onUpdateInterval(200, function () {
     info.changeScoreBy(1)
 })
